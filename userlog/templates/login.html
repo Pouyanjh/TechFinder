@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <title>login</title>
+</head>
+<body>
+<form action="/login" method="post">
+    {% csrf_token %}
+    <div class="container">
+        <div class="inputs">
+            <input type="text" id="username" name="username" required>
+            <label>Username</label>
+        </div>
+        <div class="inputs">
+            <input type="password" id="pass1" name="pass1" required>
+            <label>Password</label>
+        </div>
+        
+        <div class="login-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button type="submit">Login</button>
+        </div>
+        {% for message in messages %}
+            <p style="color: white;">{{message}}</p>
+        {% endfor %}<br>
+        <div style="width: 270px; height: 30px;
+         display: flex; justify-content: center; align-items: center;">
+            <p style="color: #ffff; ">Don`t Have an account? <a style="color: #b92bce;" href="/signup">Sign up</a></p>
+        </div>
+    </div>
+</form>
+</body>
+</html>

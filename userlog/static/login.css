@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 350px;
+    /* height: 400px; */
+    padding: 40px;
+    background: #141414;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 2px rgba(206, 203, 203, 0.25);
+}
+
+.container button{
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+    width: 270px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border: solid 1px #b92bce;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container button img{
+    width: 8%;
+}
+
+.container button a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.container .inputs{
+    position: relative;
+}
+
+.container .inputs input{
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+.container label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    pointer-events: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.inputs input:focus ~ label,
+.inputs input:valid ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #b92bce;
+}
+
+.login-btn{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #1a1a1f;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-btn:hover{
+    background: #b92bce;
+    box-shadow: 0 0 5px #b92bce,0 0 10px #b92bce,0 0 40px #b92bce;
+}
+
+.login-btn h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.login-btn span{
+    display: block;
+    position: absolute;
+}
+
+.login-btn span:nth-child(1){
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    background: #b92bce;
+    animation: animate1 2s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.login-btn span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #b92bce;
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.login-btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #b92bce;
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.login-btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #b92bce;
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+.have-acc{
+    font-size: 22px;
+    color: #fff;
+    
+}

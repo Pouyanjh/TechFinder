@@ -1,0 +1,505 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://kit.fontawesome.com/394f58f695.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>tech-finder</title>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header-bg">
+        <div class="nav">
+            <h3 style="font-family: 'Lobster';" class="logo">Tech-finder</h3>
+
+            <div class="header-text">
+                <h3 style="font-family: 'Arvo';">Find your best laptop</h3>
+                <div class="find">
+                </div>
+
+                <div  class="img">
+                    <img
+                    data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="1400"
+                    src="{% static 'image/matebook-d-15.png' %}" alt="matebook">
+                    <img
+                    data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="1400"
+                     src="{% static 'image/matebook-x-pro-2022.png' %}" alt="matebook-x-pro-2022">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <button  id="show" type="submit" class="show-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+        </button>
+
+        <div id="menu" class="ww">
+            <a style="display: inline-block;" href="">About</a>
+            <a style="display: block;"  href="">Contact us</a>
+            <hr style="margin-bottom: 3vw; width: 7rem;">
+            <a style="display: block;"  href="login">Login</a>
+            <a style="display: block;"  href="signup">Sign up</a>
+            <button id="not-show" style="width: 10vw; position: absolute; top: 1rem; right: 1rem; background-color: transparent; border: none; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- header end -->
+
+
+    <!-- main -->
+    <main>
+        <section class="top-laptop" style="margin-bottom: 5rem;">
+            <div class="top-laptop-btn">
+                <h5 style=" font-family: 'Roboto Condensed'; font-size: 4vw; position: absolute; z-index: 10; top: 2vw; left: 8vw; ">Top laptop</h5>
+                <button class="top-btn"></button>
+                <h6 style=" font-family: 'Roboto Condensed'; font-size: 4vw; position: absolute; z-index: 10; top: 2vw; right: 10vw; ">See more</h6>
+                <button class="see-more-btn"></button>
+            </div>
+            <div class="top-laptop-card">
+                <div class="card card1">
+                   <div>
+                    <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                   </div>
+                   <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                   <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                   <div class="login-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h4>Details</h4>
+                </div>
+
+                </div>
+                <div class="card card2">
+                    <div>
+                        <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                       </div>
+                       <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                       <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                       <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <div>
+                        <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                       </div>
+                       <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                       <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                       <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="top-laptop" style="margin-bottom: 25vw;">
+            <div class="top-laptop-btn">
+                <h5 style=" font-family: 'Roboto Condensed'; font-size: 4vw; position: absolute; z-index: 10; top: 2vw; left: 8vw; ">New laptop</h5>
+                <button class="top-btn"></button>
+                <h6 style=" font-family: 'Roboto Condensed'; font-size: 4vw; position: absolute; z-index: 10; top: 2vw; right: 10vw; ">See more</h6>
+                <button class="see-more-btn"></button>
+            </div>
+            <div class="top-laptop-card">
+                <div class="card card1">
+                   <div>
+                    <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                   </div>
+                   <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                   <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                   <div class="login-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h4>Details</h4>
+                </div>
+
+                </div>
+                <div class="card card2">
+                    <div>
+                        <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                       </div>
+                       <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                       <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                       <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <div>
+                        <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                       </div>
+                       <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                       <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                       <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="what-you-need" style="margin-bottom: 6vw;">
+                <h1 style="font-size: 8vw; color: #ffff;">What you need</h1>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 22vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: 7vw;  margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 22vw; position: absolute; top: -2.4vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: -0.1vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 66vw; position: absolute; top: 9.3vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: 7vw; right: 17.6vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 66vw; position: absolute; top: -2.3vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: -0.2vw; right: 17.6vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            </div>
+
+
+            <div class="hgkt">
+                <div class="rtx-ram">
+                    <div class="rtx">
+                        <div class="bg-mirror"></div>
+                        <h3>Powerfull gpu</h3>
+                        <div class="login-btn gg">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <h4>Details</h4>
+                        </div>
+                    </div>
+                    <div class="ram">
+                        <div class="bg-mirror"></div>
+                        <h3>Powerfull ram</h3>
+                        <div class="login-btn gg">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <h4>Details</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpu-diplay-hard">
+                    <div class="ssd">
+                        <div class="bg-mirror"></div>
+                        <h3>Powerfull ssd</h3>
+                        <div class="login-btn gg">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <h4>Details</h4>
+                        </div>
+                    </div>
+
+                    <div class="display">
+
+                        <div class="bg-mirror"></div>
+                        <h3>Powerfull display</h3>
+                        <div class="login-btn gg">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <h4>Details</h4>
+                        </div>
+                    </div>
+                    <div class="cpu">
+
+                        <div class="bg-mirror"></div>
+                        <h3>Powerfull cpu</h3>
+                        <div class="login-btn gg">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <h4>Details</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="apple-sec">
+
+
+
+                <div class="rec">
+                    <img style="width: 60%; position: absolute; z-index: 10; left: 20%; top: -10%;" src="{% static 'image/macbook.png' %}" alt="">
+                    <div style="margin-bottom: 9vw;" class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Interview</h4>
+                    </div>
+                    <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+                <div style="position: absolute; right: 1vw; top: 6vw; z-index: 10;">
+                    <img style="width: 4vw;" src="{% static 'image/Star 1.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 2.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 3.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 4.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 5.png' %}" alt="#">
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="500" style="width: 8vw;  position: absolute; right: 16vw; top: 14vw; z-index: 10; ">
+                    <span>
+                        <svg style="color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                          </svg>
+
+                    </span>
+                    <span style="font-family: sans-serif; color:  #fff; font-size:4vw">89%</span>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" style="width: 8vw;  position: absolute; right: 4vw; top: 14vw; z-index: 10; ">
+                    <span>
+                        <svg style="color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
+                          </svg>
+
+
+                    </span>
+                    <span style="font-family: sans-serif; color:  #fff; font-size:4vw">11%</span>
+                </div>
+
+                <div class="cir">
+                    <img style="width: 33%; position: absolute; left: 33%; top: 3%;" src="{% static 'image/apple-emblem-removebg-preview.png' %}" alt="apple">
+                </div>
+
+            </div>
+            <div class="hp-sec">
+
+                <div class="rec">
+                    <img style="width: 35%; position: absolute; z-index: 10; left: 33%; top: 5%;" src="{% static 'image/HP-Spectre-15-EB0053DX-removebg-preview.png' %}" alt="">
+                <div style=" width: 30%; padding-top: 1vw;">
+                    <div style="margin-bottom: 9vw;" class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Interview</h4>
+                    </div>
+                    <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+                </div>
+                <div style="position: absolute; right: 1vw; top: 6vw; z-index: 10;">
+                    <img style="width: 4vw;" src="{% static 'image/Star 1.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 2.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 3.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 4.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 5.png' %}" alt="#">
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="500" style="width: 8vw;  position: absolute; right: 16vw; top: 14vw; z-index: 10; ">
+                    <span>
+                        <svg style="color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                          </svg>
+
+                    </span>
+                    <span style="font-family: sans-serif; color:  #fff; font-size:4vw">89%</span>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" style="width: 8vw;  position: absolute; right: 4vw; top: 14vw; z-index: 10; ">
+                    <span>
+                        <svg style="color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
+                          </svg>
+
+
+                    </span>
+                    <span style="font-family: sans-serif; color:  #fff; font-size:4vw">11%</span>
+                </div>
+
+                <div class="cir">
+                    <img style="width: 73%; position: absolute; left: 12%; top: -6%;" src="{% static 'image/hp-new-logo.0-removebg-preview.png' %}" alt="hp">
+                </div>
+
+            </div>
+            <div class="asus-sec">
+
+                <div class="rec">
+                    <img style="width: 35%; position: absolute; z-index: 10; left: 30%; top: 0;" src="{% static 'image/laptop.png' %}" alt="">
+                 <div style=" padding-top: 1vw; float: left;">
+                    <div style="margin-bottom: 9vw;" class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Interview</h4>
+                    </div>
+                    <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+                </div>
+                <div style="position: absolute; right: 1vw; top: 6vw; z-index: 10;">
+                    <img style="width: 4vw;" src="{% static 'image/Star 1.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 2.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 3.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 4.png' %}" alt="#">
+                    <img style="width: 4vw;"  src="{% static 'image/Star 5.png' %}" alt="#">
+                </div>
+
+                <div  data-aos="fade-up" data-aos-duration="500" style="width: 8vw;  position: absolute; right: 16vw; top: 14vw; z-index: 10; ">
+                    <span>
+                        <svg
+                         style="color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                          </svg>
+
+                    </span>
+                    <span style="font-family: sans-serif; color:  #fff; font-size:4vw">89%</span>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" style="width: 8vw;  position: absolute; right: 4vw; top: 14vw; z-index: 10; ">
+                    <span>
+                        <svg style="color: purple;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
+                          </svg>
+
+
+                    </span>
+                    <span style="font-family: sans-serif; color:  #fff; font-size:4vw">11%</span>
+                </div>
+
+
+
+                <div class="cir">
+                    <img style="width: 53%; position: absolute; left: 22%; top: 16%;" src="{% static 'image/asus-logo-white-removebg-preview.png' %}" alt="hp">
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section style="padding: 3vw; margin-bottom: 10vw; display: flex; flex-direction: row;">
+            <div  style=" width: 50%; margin-left: 2vw;" class="build">
+                <h1>Build your laptop</h1>
+                <h3>You can specify anything you want
+                    ram , hard , cpu , gpu , ... </h3>
+
+                <button type="submit" style="width: 30vw; height: 7vw; background-color: #9865C0; border: none; color: #fff;"><a href="#"></a>Let`s do it</button>
+            </div>
+            <div style=" width: 51%;" class="women">
+                <div class="half-cir">
+                    <div>
+                        <div>
+                            <img src="{% static 'image/woman-holding-laptoppng.png' %}" alt="#">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-media">
+                <a href="#">
+                    <svg style="width: 5vw;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+                    <span>telegran</span>
+                </a>
+                <a  href="">
+                    <svg style="width: 5vw;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <span>instagram</span>
+                </a>
+                <a href="">
+                    <svg style="width: 5vw;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    <span>linkedin</span>
+                </a>
+            </div>
+            <div class="footer-menu" >
+                <a href="">About</a>
+                <a class="mid-child" href="">Contact us</a>
+                <a href="">Home</a>
+            </div>
+
+            <hr style="width: 50%; position: absolute; top: 8vw; transform: rotate(180deg);">
+
+            <span style="position: absolute; transform: rotate(180deg); top: 1.4vw; font-family: sans-serif; font-size: 4vw;">Design by <span style="font-family: 'Lobster';">Pouyan & Parsa</span></span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="{% static 'app.js' %}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
