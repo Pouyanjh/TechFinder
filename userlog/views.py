@@ -51,6 +51,9 @@ def LoginView(request):
 def HomeView(request):
     return render(request, 'home.html')
 
+def DetailView(request):
+    return render(request, 'detail.html')
+
 
 
 

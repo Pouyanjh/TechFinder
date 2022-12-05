@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'detail.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>detail</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header-bg">
+        <div class="nav">
+            <h3 style="font-family: 'Lobster';" class="logo">Tech-finder</h3>
+
+            <div class="header-text">
+                <h3 style="font-family: 'Arvo'; ">Hp elitebook 2</h3>
+                <div class="find">
+                </div>
+                
+               
+         
+            </div>
+        </div>
+    </div>
+
+        <button  id="show" type="submit" class="show-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>              
+        </button>
+
+        <div id="menu" class="ww">
+            <a style="display: inline-block;" href="">About</a>
+            <a style="display: block;"  href="">Contact us</a>
+            <hr style="margin-bottom: 3vw; width: 7rem;">
+            <a style="display: block;"  href="login">Login</a>
+            <a style="display: block;"  href="signup">Sign up</a>
+            <button id="not-show" style="width: 10vw; position: absolute; top: 1rem; right: 1rem; background-color: transparent; border: none; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>                  
+            </button>
+        </div>
+    </div>
+
+    <div style="width: 90vw;position: absolute; right: -20vw; top: 14vw; "  class="hhs">
+        <img style="width: 100%;" src="{% static 'image/matebook-x-pro-2022.png' %}" alt="">
+    </div>
+
+    <div class="detail">
+        <div class="cpu">
+            <span style="color: #fff; font-size: 6vw; ">cpu : i7 8633H</span>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 38vw; margin-top: 1vw; "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 8vw; position: absolute;  left: -1.1vw; top: 10vw; transform: rotate(45deg);  "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 8vw; position: absolute;  left: 40vw; top: 14.3vw; transform: rotate(45deg); margin-bottom: 1vw; "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+        </div>
+        <div class="ram">
+            <span style="color: #fff; font-size: 6vw; ">ram : 16 , 32</span>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 38vw; margin-top: 1vw; "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 8vw; position: absolute;  left: -1.1vw; top: 19.3vw; transform: rotate(45deg);  "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 8vw; position: absolute;  left: 40vw; top: 24vw; transform: rotate(45deg);  "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+        </div>
+        <div class="hard">
+            <span style="color: #fff; font-size: 6vw; ">hard : 512 ssd</span>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 38vw; margin-top: 1vw; "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 8vw; position: absolute;  left: -1vw; top: 29vw; transform: rotate(45deg);  "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 8vw; position: absolute;  left: 40vw; top: 33.3vw; transform: rotate(45deg);  "> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+        </div>
+        <div class="gpu">
+            <span style="color: #fff; font-size: 6vw; ">gpu : intel iris</span>
+     
+        </div>
+    </div>
+   
+
+    <!-- header end -->
+
+    <main>
+        <section style="position: relative;">
+            <h1 class="what-you-need" style="font-size: 8vw; color: #ffff;">Hp elitebook</h1>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 22vw; margin-bottom: 2vw; position: absolute; top: -1.6vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: 1vw;  margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 22vw; position: absolute; top: 10.4vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: 8vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 66vw; position: absolute; top: -1.6vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: 1vw; right: 17.6vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 14vw; margin-left: 66vw; position: absolute; top: 10.4vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+            <div  style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; width: 6vw; margin-left: 19.3vw; transform: rotate(90deg); position: absolute; top: 8vw; right: 17.6vw; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+        </section>
+
+
+        <section>
+            <div style="color: #fff; padding: 8vw; font-size: 5vw; font-family: 'PT Sans';" class="info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </div>
+
+            <div style="width: 60vw; position: relative;">
+                <img style="width: 100%; position: absolute; left: 20vw; box-shadow: 0px 0px 4px 2px rgba(206, 203, 203, 0.25)" src="{% static 'image/infolaptop.jpg' %}" alt="">
+            </div>
+
+            <div style="color: #fff; padding: 8vw; font-size: 5vw; margin-top: 40vw; font-family: 'PT Sans';" class="info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            </div>
+
+            <div style="width: 60vw; position: relative; margin-bottom: 60vw;">
+                <div class="bg-mirror"></div>
+                <img class="youtube" style="width: 100%; position: absolute; left: 20vw; z-index: 1;" src="{% static 'image/surface-laptop-4-amd-05052021-with-friends-header-smwm-scaled.jpeg' %}" alt="">
+            </div>
+        </section>
+
+
+        <section style="margin-bottom: 100vw;">
+            <div data-aos="zoom-in-down" class="my-text">
+                <div class="circle">
+                    <img style="width: 100%; border-radius: 50%; position: absolute; top: -0.8vw;" src="{% static 'image/parsa.jpeg' %}" alt="">
+                </div>
+                <div>
+                    <h3 style="position: absolute; left: 30vw; color: #ffff; top: 1vw;">Parsa</h3>
+
+                    <div style="position: absolute; right: 3vw; top: 2vw; z-index: 10;">
+                        <img style="width: 4vw;" src="{% static 'image/Star 1.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 2.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 3.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 4.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 5.png' %}" alt="#">
+                    </div>
+                </div>
+
+                <div>
+                    <h5 style="font-size: 3.4vw; position: absolute; top: 12vw; left: 1vw; color: #fff;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    </h5>
+                </div>
+
+
+            <div data-aos="zoom-in-down" class="pouyan-text">
+                <div class="circle">
+                    <img style="width: 100%; border-radius: 50%; position: absolute;" src="{% static 'image/pouyan.JPG' %}" alt="">
+                </div>
+                <div>
+                    <h3 style="position: absolute; left: 30vw; color: #ffff; top: 1vw;">Pouyan</h3>
+
+                    <div style="position: absolute; right: 3vw; top: 2vw; z-index: 10;">
+                        <img style="width: 4vw;" src="{% static 'image/Star 1.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 2.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 3.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 4.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 5.png' %}" alt="#">
+                    </div>
+                </div>
+
+                <div>
+                    <h5 style="font-size: 3.4vw; position: absolute; top: 12vw; left: 1vw; color: #fff;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    </h5>
+                </div>
+
+
+            <div data-aos="zoom-in-down" class="nobody-text">
+                <div class="circle">
+                    <!-- <img style="width: 100%; border-radius: 50%; position: absolute; top: -0.6vw;" src="/image/parsa.jpeg" alt=""> -->
+                </div>
+                <div>
+                    <h3 style="position: absolute; left: 30vw; color: #ffff; top: 1vw;">Nobody</h3>
+
+                    <div style="position: absolute; right: 3vw; top: 2vw; z-index: 10;">
+                        <img style="width: 4vw;" src="{% static 'image/Star 1.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 2.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 3.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 4.png' %}" alt="#">
+                        <img style="width: 4vw;"  src="{% static 'image/Star 5.png' %}" alt="#">
+                    </div>
+                </div>
+
+                <div>
+                    <h5 style="font-size: 3.4vw; position: absolute; top: 12vw; left: 1vw; color: #fff;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    </h5>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="top-laptop" style="margin-bottom: 25vw;">
+            <div class="top-laptop-btn">
+                <h5 style=" font-family: 'Roboto Condensed'; font-size: 4vw; position: absolute; z-index: 10; top: 2vw; left: 7vw; ">Same laptop</h5>
+                <button class="top-btn"></button>
+                <h6 style=" font-family: 'Roboto Condensed'; font-size: 4vw; position: absolute; z-index: 10; top: 2vw; right: 10vw; ">See more</h6>
+                <button class="see-more-btn"></button>
+            </div>
+            <div class="top-laptop-card">
+                <div class="card card1">
+                   <div>
+                    <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                   </div>
+                   <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                   <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                   <div class="login-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h4>Details</h4>
+                </div>
+                   
+                </div>
+                <div class="card card2">
+                    <div>
+                        <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                       </div>
+                       <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                       <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                       <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <div>
+                        <img src="{% static 'image/matebook-d-15.png' %}" alt="">
+                       </div>
+                       <div style="background: #0E0D0D;border: 0.5vw solid #8014D6;border-radius: 10px; margin-bottom: 2.5vw;"> <hr style="border: solid 0.2vw #0E0D0D; border-radius: 10px;"></div>
+                       <p style="font-size: 4vw; color: #ffff; padding-left: 1rem;">Huawi matebook</p>
+                       <div class="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h4>Details</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="position: relative;">
+            <div class="coment">
+                <h1 style="font-size: 8vw; color: #fff; margin-left: 5vw; margin-bottom: 3vw;">Coments</h1>
+                <div>
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 5vw;">
+                        <input style="width: 45%;" type="text" placeholder="Name">
+                        <input style="width: 45%;" type="text" placeholder="Title">
+                    </div>
+                </div>
+                <div style="margin-bottom: 10vw;">
+                    <input style="width: 95.5vw; height: 20vw; margin-left: 2vw;  color: #fff;" type="text" placeholder="Description">
+                </div>
+            </div>
+
+
+            <div class="coment-person">
+                <div class="circle-coment">
+                        
+                </div>
+                <div>
+                    <h5 style="font-size: 3.4vw; position: absolute; top: 6vw; left: 1vw; color: #fff;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    </h5>
+                </div>
+
+            </div>
+            <div class="coment-person">
+                <div class="circle-coment">
+                        
+                </div>
+                <div>
+                    <h5 style="font-size: 3.4vw; position: absolute; top: 6vw; left: 1vw; color: #fff;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    </h5>
+                </div>
+            </div>
+            <div class="coment-person">
+                    <div class="circle-coment">
+                        
+                    </div>
+                    <div>
+                        <h5 style="font-size: 3.4vw; position: absolute; top: 6vw; left: 1vw; color: #fff;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        </h5>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-media">
+                <a href="#">
+                    <svg style="width: 5vw;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+                    <span>telegram</span>
+                </a>
+                <a  href="">
+                    <svg style="width: 5vw;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    <span>instagram</span>
+                </a>
+                <a href="">
+                    <svg style="width: 5vw;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    <span>linkedin</span>
+                </a>
+            </div>
+            <div class="footer-menu" >
+                <a href="">About</a>
+                <a class="mid-child" href="">Contact us</a>
+                <a href="">Home</a>
+            </div>
+            
+            <hr style="width: 50%; position: absolute; top: 8vw; transform: rotate(180deg);">
+
+            <span style="position: absolute; transform: rotate(180deg); top: 1.4vw; font-family: sans-serif; font-size: 4vw;">Design by Pouyan & Parsa <span style="font-family: 'Lobster';"></span></span>
+            
+        </div>
+
+    </footer>
+
+    <script src="{% static 'detail.js' %}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

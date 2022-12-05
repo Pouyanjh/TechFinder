@@ -100,11 +100,12 @@ body{
     box-shadow: 0 0 5px #b92bce,0 0 10px #b92bce,0 0 40px #b92bce;
 }
 
-.login-btn h2{
+.login-btn button{
     text-align: center;
     letter-spacing: 3px;
     font-family: monospace;
     font-size: 25px;
+    border: none;
 }
 
 .login-btn span{
